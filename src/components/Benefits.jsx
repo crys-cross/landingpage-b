@@ -24,9 +24,13 @@ const FeatureCard = ({ icon, title, content, index }) => (
   </div>
 );
 
-const Business = () => (
+const Benefits = () => (
   <section id="features" className={layout.section}>
     <div className={layout.sectionInfo}>
+      {/* Gradients start */}
+      <div className="absolute z-[-3] -left-1/2 top-50 w-[50%] h-[50%] rounded-full white__gradient" />
+      <div className="absolute z-[0] -left-1/2 bottom-50 w-[50%] h-[50%] rounded-full purple__gradient" />
+      {/* Gradients end */}
       <h2 className={styles.heading2}>Benefits</h2>
       <p className={`${styles.paragraph} max-w-[470px] mt-5`}>
         Hydrates faster and detoxifies in a natural way.
@@ -41,4 +45,4 @@ const Business = () => (
   </section>
 );
 
-export default Business;
+export default Benefits;
